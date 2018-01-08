@@ -11,8 +11,6 @@ Dec, 2017
 This document is an attempt to describe what I named UPS (Universal Project Structure). UPS is an project structure that is meant to be used for any kind of software project. Throughout this document I'll try to explain the philosphy and the goal behind this project structure, the main parts of this folder structure, how does it fit well for any kind of development and what benefits you could get from it.
 
 
-<br>
-
 ## Terminology
 
 Let's explain some useful terms used in this docs. Feel free to skip term definitions that you already know.
@@ -21,11 +19,9 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
 * **Kind** : A precise type of project specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
 
 
-<br>
-
 ## Contents
 
-  1. [Overview]
+  1. [introduction]
   1. [Scope]
   1. [Purpose]
   1. [Requirements]
@@ -41,9 +37,7 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
   1. [Extras]
   1. [License]
 
-<br>
-
-## Overview
+## Introduction
 
 Building software today is easier that before. Nowadays, we got IDEs, Frameworks, and Tools which speed up our work or make us more productive. A the early stage of your development process, we are provided with tools : 
 
@@ -61,13 +55,9 @@ It means for me that we should not let the framework encapsulate what our applic
 I think doing this is a step forward towards the ultime goal of building a directory structure that make us get what the application do. Throughout this document, I will tell you how I acheive neutrality by building a **unique** high level directory structure.
 
 
-<br>
-
 ## Scope
 
 I really beleive that UPS could be applied to any kind of project. At the moment, tried and validate UPS for web development projects only but in the future, I plan to apply the same principles to mobile development and more. 
-
-<br>
 
 ## Goals
 
@@ -76,63 +66,50 @@ UPS aims to provide :
 * A high level projecft structure that is completely framework agnostic (neutral)
 * The best workspace and tools to ease our work througout the softwares development processes/activities
 
-
-
-<br>
-
 ## Requirements and tooling
 
 To acheive those goals we need well known and proven tools used in the software development lifecyle. As I said before, UPS is an apinionated folder structure. It is made possible by a set of tools that support the philosophy. So what an UPS project requires ? 
 
 To follow UPS, you need to be familiar with the following tools : 
 
+* **Git** : It's the prefered solution for source code versionning and development flow
 * **Docker** : It eanble us to build our application in an isaolated sandbox that is similar to the target live environment
 * **Rake** : It is a great tools known and loved by Ruby developers. I use this to manage every tasks executed througout our development process and even till the deployment of the application to any environments.
 
-<br>
+## Overview
 
 ## Metafile
 
-<br>
 
 ### ups
 
-<br>
 
 ### project
 
-<br>
 
 ## Documentation
 
-<br>
 
 ## Source
 
-<br>
 
 ## Utilities
 
-<br>
 
 ## Scripts
 
-<br>
 
 ## Tests
 
-<br>
 
 ## Extras
 
-<br>
 
 ## Authors
 
 * Lionel T. ( [@lktslionel](twitter.com/lktslionel) )
 
 
-<br>
 
 ## License
 
