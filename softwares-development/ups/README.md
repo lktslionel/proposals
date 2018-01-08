@@ -8,31 +8,58 @@ Dec, 2017
 
 ## Abstract
 
-Building software today is become as esay as it was before. We have Frameworks and Tools that help us manage our development process from the early stage of your development till the deployment of your code to a target environment. In fact, while creating a project we the put too much emphasis on the choice of the framework to use, and less too the business problem we try to solve.   
+This document is an attempt to describe what I named UPS (Universal Project Structure). UPS is an project structure that is meant to be used for any kind of software project. Throughout this document I'll try to explain the philosphy and the goal behind this project structure, the main parts of this folder structure, how does it fit well for any kind of development and what benefits you could get from it.
+
+
+<br>
 
 ## Terminology
 
+Let's explain some useful terms used in this docs. Feel free to skip term definitions that you already know.
+
+* **UPS** : Universal Project Structure
+* **Kind** : A precise type of project specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
+
+
+<br>
+
 ## Contents
 
-* [Overview]
-* [Scope]
-* [Purpose]
-* [Requirements]
-* [Overview]
-* [Metafile]
-  * [ups]
-  * [ups]
-* [Documentation]
-* [Source]
-* [Configuration]
-* [Scripts]
-* [Tests]
-* [Extras]
-* [License]
+  1. [Overview]
+  1. [Scope]
+  1. [Purpose]
+  1. [Requirements]
+  1. [Overview]
+  1. [Metafile]
+      * [ups]
+  1. [Documentation]
+  1. [Source]
+  1. [Configuration]
+  1. [Scripts]
+  1. [specs]
+  1. [Tests]
+  1. [Extras]
+  1. [License]
 
 <br>
 
 ## Overview
+
+Building software today is easier that before. Nowadays, we got IDEs, Frameworks, and Tools which speed up our work or make us more productive. A the early stage of your development process, we are provided with tools : 
+* To scaffold our project folder
+* To setup our porject for development
+* To add third-party libraries to our project
+* And more.
+
+As a result, those frameworks and tools tend to shift our focus to the least relevant part of the project. In fact, 
+while creating a project we the put too much emphasis on 
+choosing a framework to use, and less attention to the business problem we try to solve.
+
+Moreover, each framework come with its own conventions, 
+folder structure and tooling that prevent us from defining 
+a common way of building, testing and deploying all 
+different applications with got. In fact we should too much 
+
 
 <br>
 
@@ -40,11 +67,11 @@ Building software today is become as esay as it was before. We have Frameworks a
 
 <br>
 
-## Purpose
+## Goals
 
 <br>
 
-## Requirements
+## Requirements and tooling
 
 <br>
 
@@ -117,6 +144,7 @@ Licensed under the [MIT](LICENSE) License.
 [Source]:           #Source  
 [Configuration]:    #Configuration 
 [Scripts]:          #Scripts 
+[Specs]:            #Specs 
 [Tests]:            #Tests 
 [Extras]:           #Extras  
 [License]:          #License
