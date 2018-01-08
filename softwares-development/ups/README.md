@@ -46,36 +46,48 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
 ## Overview
 
 Building software today is easier that before. Nowadays, we got IDEs, Frameworks, and Tools which speed up our work or make us more productive. A the early stage of your development process, we are provided with tools : 
+
 * To scaffold our project folder
 * To setup our porject for development
 * To add third-party libraries to our project
 * And more.
 
-As a result, those frameworks and tools tend to shift our focus to the least relevant part of the project. In fact, 
-while creating a project we the put too much emphasis on 
-choosing a framework to use, and less attention to the business problem we try to solve.
+As a result, those frameworks and tools tend to shift our focus far from the business problem we're solving. In fact, we put too much emphasis on how to use thoses frameworks and tools, but less on how we should architect our applications for the business problems we are facing. As Uncle Bob([@unclebobmartin](https://twitter.com/unclebobmartin)) quoted in [his talk about clean architecture](https://youtu.be/o_TH-Y78tt4?t=10m42s) : 
 
-Moreover, each framework come with its own conventions, 
-folder structure and tooling that prevent us from defining 
-a common way of building, testing and deploying all 
-different applications with got. In fact we should too much 
+  > Why does the higher level directory structure of this application tell me the framework I am using; Why doesn't it tell me what the application does ? <br>- Robert C. Martins (Uncle Bob)
+
+It means for me that we should not let the framework encapsulate what our application is doing but instead, make our application encapsulate the framework it is using. More precisely, the higher level directory structure of your application must either tell what your application does or nothing (being completely neutral). But what does ***neutral*** means ? By neutral I mean that at first glance of an application structure you shouldn't be able to guess want framework the application is using. 
+
+I think doing this is a step forward towards the ultime goal of building a directory structure that make us get what the application do. Throughout this document, I will tell you how I acheive neutrality by building a **unique** high level directory structure.
 
 
 <br>
 
 ## Scope
 
+I really beleive that UPS could be applied to any kind of project. At the moment, tried and validate UPS for web development projects only but in the future, I plan to apply the same principles to mobile development and more. 
+
 <br>
 
 ## Goals
+
+UPS aims to provide : 
+
+* A high level projecft structure that is completely framework agnostic (neutral)
+* The best workspace and tools to ease our work througout the softwares development processes/activities
+
+
 
 <br>
 
 ## Requirements and tooling
 
-<br>
+To acheive those goals we need well known and proven tools used in the software development lifecyle. As I said before, UPS is an apinionated folder structure. It is made possible by a set of tools that support the philosophy. So what an UPS project requires ? 
 
-## Overview
+To follow UPS, you need to be familiar with the following tools : 
+
+* **Docker** : It eanble us to build our application in an isaolated sandbox that is similar to the target live environment
+* **Rake** : It is a great tools known and loved by Ruby developers. I use this to manage every tasks executed througout our development process and even till the deployment of the application to any environments.
 
 <br>
 
