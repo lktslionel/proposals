@@ -15,9 +15,11 @@ This document is an attempt to describe what I named UPS (Universal Project Stru
 
 Let's explain some useful terms used in this docs. Feel free to skip term definitions that you already know.
 
-* **UPS** : Universal Project Structure
-* **Kind** : A precise type of project specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
-
+* **UPS**: Universal Project Structure
+* **Kind**: A precise type of project specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
+* **runtime**: The environment in which your code will be executed. Eg: nodejs, go, jre(java)
+* **lang**: The main language in which the code is written. 
+* **lang_extras**: The other programming language used in your project.
 
 ## Contents
 
@@ -39,18 +41,18 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
 
 ## Introduction
 
-Building software today is easier that before. Nowadays, we got IDEs, Frameworks, and Tools which speed up our work or make us more productive. A the early stage of your development process, we are provided with tools : 
+Building software today is easier that before. Nowadays, we got IDEs, Frameworks, and Tools which speed up our work or make us more productive. At the early stage of your development process, we have at our disposal tools : 
 
 * To scaffold our project folder
-* To setup our porject for development
-* To add third-party libraries to our project
+* To setup our development environment 
+* To add third-party libraries and dependencies to our project
 * And more.
 
-As a result, those frameworks and tools tend to shift our focus far from the business problem we're solving. In fact, we put too much emphasis on how to use thoses frameworks and tools, but less on how we should architect our applications for the business problems we are facing. As Uncle Bob([@unclebobmartin](https://twitter.com/unclebobmartin)) quoted in [his talk about clean architecture](https://youtu.be/o_TH-Y78tt4?t=10m42s) : 
+As a result, those frameworks and tools tend to shift our focus far from the business problem we're trying to solve. In fact, we put too much emphasis on how to use thoses frameworks and tools, and less on how we should architect our applications. The aim of our business logic is being hidden by either frameworks or/and tools. As Uncle Bob([@unclebobmartin](https://twitter.com/unclebobmartin)) quoted in [his talk about clean architecture](https://youtu.be/o_TH-Y78tt4?t=10m42s) : 
 
   > Why does the higher level directory structure of this application tell me the framework I am using; Why doesn't it tell me what the application does ? <br>- Robert C. Martins (Uncle Bob)
 
-It means for me that we should not let the framework encapsulate what our application is doing but instead, make our application encapsulate the framework it is using. More precisely, the higher level directory structure of your application must either tell what your application does or nothing (being completely neutral). But what does ***neutral*** means ? By neutral I mean that at first glance of an application structure you shouldn't be able to guess want framework the application is using. 
+For me, this means that we should not let those frameworks hide our buisness logic, but instead, make our application drives to way we use those frameworks. More precisely, the higher level directory structure of your application must either tell what your application does or nothing; the directory structure of your application must be frameworks neutral. But what does ***neutral*** means ? By neutral I mean that at first glance of an application structure you shouldn't be able to guess want framework the application is using. 
 
 I think doing this is a step forward towards the ultime goal of building a directory structure that make us get what the application do. Throughout this document, I will tell you how I acheive neutrality by building a **unique** high level directory structure.
 
