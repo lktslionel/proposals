@@ -76,33 +76,102 @@ To follow UPS, you need to be familiar with the following tools :
 * **Docker** : It eanble us to build our application in an isaolated sandbox that is similar to the target live environment
 * **Rake** : It is a great tools known and loved by Ruby developers. I use this to manage every tasks executed througout our development process and even till the deployment of the application to any environments.
 
-## Overview
+## Project Structure
 
-## Metafile
+### Overview
 
-
-### ups
-
-
-### project
+Let's directly dive into it. Below is the global strucure of an UPS project.
 
 
-## Documentation
+```bash
+.
+├── .target/                          # Contains the resulting artifact of the `assemble` phase
+├── .cache/                           # For caching purpose
+├── etc/                              # Configuration files
+├── tasks/                            # Binaries and utility scripts used for the project mainly inside the Rakefile
+│                                     #   for the project mainly inside the Rakefile
+├── scripts/                          # Common bash scripts available inside the container
+├── specs/                            # Specifications
+├── docs/                             # Contains all documentation files (*.md)
+│   ├── CHANGELOG.md                  #   - Release notes for the project
+│   ├── GUIDELINES.md                 #   - Project guidelines inforamtion
+│   └── CONTRIBUTE.md                 #   - Information about how to contribute
+├── ci/                               # Contains config file specific to your CI tool. Eg: jenkins
+├── src/                              # For your source files
+├── README.md                         # Main documentation (How-tos)
+├── LICENSE                           # License file
+├── Rakefile                          # Contains all our rake task's defintions
+└── .ups                              # UPS metafile
+```
 
 
-## Source
+### Metafile
 
 
-## Utilities
+#### ups
 
 
-## Scripts
+#### project
 
 
-## Tests
+### Configuration
+
+```
+├── etc/                              # Configuration files
+│   ├── ansible/                      # Ansible playbooks
+│   └── docker/                       # Docker config files
+│       ├── Dockerfile                #   - Dockerfile use in the `assemble` phase
+│       ├── docker-compose.yml        #   - Compose file use in the `assemble` phase
+```
 
 
-## Extras
+### Continuous Integration
+
+```
+├── ci/                               # Contains config file specific to your CI tool. Eg: jenkins
+│   ├── jenkins/                      #
+│   │   └── Jenkinsfile               # Contains description of our jenkins pipeline (CI)
+│   ├── gitlab/                       #
+│   │   └── .gitlab.yml               # Contains description of our jenkins pipeline (CI)
+```
+
+### Documentation
+
+
+### Source
+
+
+### Tasks
+
+```
+├── tasks/                            # Binaries and utility scripts used for the project not inside the container 
+│   ├── assemble.sh                   #   - Execute tasks for building our code
+│   ├── test.sh                       #   - Execute tasks for testing our code
+│   ├── publish.sh                    #   - Execute tasks for pushing our packaged app to a repo manager
+│   ├── package.sh                    #   - Execute tasks for packaging our app
+```
+
+
+
+### Utilities
+
+#### Target
+#### Cache
+
+### Scripts
+
+```
+├── scripts/                          # Common bash scripts available inside the container
+│   ├── run.sh                        #   - Execute tasks for running our app
+│   ├── backup.sh                     #   - Execute tasks for backuping our app
+│   └── restore.sh                    #   - Execute tasks for restoring our app
+```
+
+
+### Tests
+
+
+### Extras
 
 
 ## Authors
