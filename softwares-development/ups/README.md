@@ -147,10 +147,10 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 
 ```
 ├── tasks/                            # Binaries and utility scripts used for the project not inside the container 
-│   ├── assemble.sh                   #   - Execute tasks for building our code
-│   ├── test.sh                       #   - Execute tasks for testing our code
-│   ├── publish.sh                    #   - Execute tasks for pushing our packaged app to a repo manager
-│   ├── package.sh                    #   - Execute tasks for packaging our app
+│   ├── code                          #   - Execute tasks for building our code
+│   ├── build                         #   - Execute tasks for building our code
+│   ├── test                          #   - Execute tasks for testing our code
+│   ├── release                       #   - Execute tasks for pushing our packaged app to a repo manager
 ```
 
 
@@ -164,9 +164,9 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 
 ```
 ├── scripts/                          # Common bash scripts available inside the container
-│   ├── run.sh                        #   - Execute tasks for running our app
-│   ├── backup.sh                     #   - Execute tasks for backuping our app
-│   └── restore.sh                    #   - Execute tasks for restoring our app
+│   ├── run                           #   - Execute tasks for running our app
+│   ├── backup                        #   - Execute tasks for backuping our app
+│   └── restore                       #   - Execute tasks for restoring our app
 ```
 
 
