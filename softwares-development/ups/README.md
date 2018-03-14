@@ -31,6 +31,7 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
   1. [Metafile]
       * [ups]
   1. [Documentation]
+  1. [Examples]
   1. [Source]
   1. [Configuration]
   1. [Scripts]
@@ -89,6 +90,7 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 .
 ├── .target/                          # Contains the resulting artifact of the `assemble` phase
 ├── .cache/                           # For caching purpose
+├── examples/                         # Use this for useful examples
 ├── etc/                              # Configuration files
 ├── tasks/                            # Binaries and utility scripts used for the project mainly inside the Rakefile
 │                                     #   for the project mainly inside the Rakefile
@@ -138,6 +140,12 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 ```
 
 ### Documentation
+
+
+
+### Examples
+
+
 
 
 ### Source
