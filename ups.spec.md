@@ -1,8 +1,7 @@
+###### SOFTWARE DEVELOPMENT
 # UPS Spec.
 
 **Version** : 0.1.0-draft
-
-Dec, 2017
 
 <br>
 
