@@ -34,6 +34,11 @@ I'm nothing saying that UML is useless; I think UML specifications are well suit
   - Code generation based on UML Diagrams
   - Software Specification documents where things needs to be detailed and accurate
 
+I really believe that architecture diagrams should be : 
+  - Simple and clear
+  - Readable by either business or technical stakeholders
+  - Accessible by anybody who wants to express an idea visually
+
 
 ## Key concepts
 
