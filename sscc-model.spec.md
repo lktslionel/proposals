@@ -45,6 +45,19 @@ I'm nothing saying that UML is useless; I think UML specifications are well suit
 
 
 
+## Authors & contributors
+
+* Lionel T. ( [@lktslionel](twitter.com/lktslionel) )
+
+
+
+## License
+
+Copyright (c) 2017 - lktslionel. All rights reserved.
+
+Licensed under the [MIT](LICENSE) License.
+
+
 
 
 [Background]:         #Background
