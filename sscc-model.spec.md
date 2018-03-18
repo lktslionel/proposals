@@ -43,14 +43,31 @@ I really believe that architecture diagrams should be :
 
 ## Notations
 
-A system diagram use the followings drawings and notations:
+The SSCC model use mainly some rectangles to represent almost all drawings. It makes a smart use of annotations to distinguish items within a diagram.
 
+###### MAIN ITEMS
 
-Item | Params | Details | Representation | 
+Item | Params | Details | Representation 
 ---------|------ |-------|---------
-System | Name or Context | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing-v2.png) 
+System | Name or Context | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing-v1.png) 
+Service | Name | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-service-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-service-drawing.png)
+Component | Name | {metadata}  | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-component-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-component-drawing.png)
+Class | Name | |![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing.png)
 Relation |Name | The name should be an action verb<br>and bidirectional relation are denied.<br>Arrow must match the direction of the relation | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png)
- 
+
+<br>
+
+###### OTHER ITEMS 
+
+
+Item | Params | Details | Representation 
+------|-------|----------|---------
+Actor | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-actor-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-actor-drawing.png)
+Relation | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png)
+Connector | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing.png)
+Forwarder | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-forwarder-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-forwarder-drawing.png)
+Listener | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-listener-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-listener-drawing.png)
+Sender | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-sender-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-sender-drawing.png)
 
 
 ## Key concepts
