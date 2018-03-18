@@ -64,7 +64,7 @@ Item | Params | Details | Representation
 ------|-------|----------|---------
 Actor | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-actor-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-actor-drawing.png)
 Relation | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png)
-Connector | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing.png)
+Connector | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-connector-communicate-drawing.png)
 Forwarder | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-forwarder-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-forwarder-drawing.png)
 Listener | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-listener-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-listener-drawing.png)
 Sender | | | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-sender-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-sender-drawing.png)
