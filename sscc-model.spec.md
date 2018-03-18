@@ -17,6 +17,33 @@ You will be able to described all things that your architecture is compose of; g
   1. [Examples]
 
 
+## Background
+
+This architecture model is inspired by the well known [C4-model](http://c4model.com/). As this model, the SSCC model is simple and clear. It focuses on a small problem/scope to address : use simple drwaing to describe small and even complex systems.
+
+UML diagrams are great and it can be used to express almost any software architecture. But it comes with some bottlenecks : 
+  - Diagrams could be hard to remember and complex to use
+  - Diagrams are often too expressive than they need to be
+  - The same UML Drawings means different things regarding the type of Diagrams you are using
+
+Quite often, architecture diagrams start with some annotated simple drawings as polygones and lines.
+When this is already clear for everyone, we add some complexity by transforming our drawings to UML Diagrams.
+Therefore, we tend to loose visibily and clarity.
+
+I'm nothing saying that UML is useless; I think UML specifications are well suited for purposes such as:
+  - Code generation based on UML Diagrams
+  - Software Specification documents where things needs to be detailed and accurate
+
+
+## Key concepts
+
+
+
+
+## Examples
+
+
+
 
 
 
