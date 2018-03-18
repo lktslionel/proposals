@@ -41,6 +41,17 @@ I really believe that architecture diagrams should be :
 - Readable by either business or technical stakeholders
 - Accessible by anybody who wants to express an idea visually
 
+## Notations
+
+A system diagram use the followings drawings and notations:
+
+
+Item | Params | Details | Representation | 
+---------|------ |-------|---------
+System | Name or Context | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing-v2.png) 
+Relation |Name | The name should be an action verb<br>and bidirectional relation are denied.<br>Arrow must match the direction of the relation | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-relation-drawing.png)
+ 
+
 
 ## Key concepts
 
@@ -56,7 +67,7 @@ In fact, each diagram gives a specific level of details regarding your architect
 
 We will look into each diagrams of the SSCC model and also gives you our recommendation on the right target audicance for each diagram. 
 
-
+ 
 ### System (S)
 
 #### Overview
@@ -66,11 +77,7 @@ The **System Diagram** will be your starting point when architecting a software 
   > **Internal** : Means, built by you and it is part of your internal infrastructure<br> 
   > **External** : Means, provided by an external company; usually SAAS services or systems out of your infrastructure
   
-#### Usage
 
-A system diagram use the followings drawings and annotations:
-
- 
 
 #### Benefits
 
