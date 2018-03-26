@@ -34,7 +34,6 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
   1. [Source]
   1. [Configuration]
   1. [Scripts]
-  1. [specs]
   1. [Tests]
   1. [Extras]
   1. [License]
@@ -94,7 +93,12 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 ├── tasks/                            # Binaries and utility scripts used for the project mainly inside the Rakefile
 │                                     #   for the project mainly inside the Rakefile
 ├── scripts/                          # Common bash scripts available inside the container
-├── specs/                            # Specifications
+├── tests/                            # Specifications
+│   ├── accpetance                    #   For accpetance testing
+│   │   ├── features                  #     Contains feature definition in Gherkin langage
+│   │   │   ├── XXX.feature           #       - A feature file
+│   │   ├── steps                     #     Contains implemenation steps of features
+│   │   │   ├── YYY.step.<lang>       #       - A Step file for the specific language
 ├── docs/                             # Contains all documentation files (*.md)
 │   ├── CHANGELOG.md                  #   - Release notes for the project
 │   ├── GUIDELINES.md                 #   - Project guidelines inforamtion
