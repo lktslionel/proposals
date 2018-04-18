@@ -136,8 +136,8 @@ Licensed under the [MIT](LICENSE) License.
 
 
 
-[Background]:         #Background
-[Key concepts]:       #Key%20concepts
-[Examples]:           #Examples
+[Background]:         #background
+[Key concepts]:       #Key-concepts
+[Examples]:           #examples
 
 
