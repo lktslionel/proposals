@@ -1,7 +1,7 @@
 ###### SOFTWARE ARCHITECTURE
 # SSCC Spec.
 
-**Version** : 0.1.0-draft
+**Version** : <span style="color:GoldenRod">0.1.0-draft</span>
 
 <br>
 
