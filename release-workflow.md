@@ -7,7 +7,13 @@
 
 ## Abstract
 
-This document is a proposal about how to manage releases of any software. It tries to decribe 
+This document is a proposal about how to manage releases of any software. It decribes the workflow that any developer should follow to produce great and ready to deploy releases. It starts by giving some context and motivation behind this proposal. Then, we will dive deep into the developer workflow; focusing on :
+
+* How to initialize/setup your project repo
+* How to well format our commit message
+* How to setup our project for continous integration
+* How to setup our project for continous delivery
+
 
 ## Contents
 
