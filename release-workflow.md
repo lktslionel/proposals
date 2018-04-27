@@ -13,7 +13,10 @@ This document is a proposal about how to manage releases of any software. It dec
 * How to well format our commit message
 * How to setup our project for continous integration
 * How to setup our project for continous delivery
-
+* How to name our branches
+* How to handle delivery regarding the branch we are on
+* How to manage release version with tagging
+* How to be ready for continous deployment
 
 ## Contents
 
