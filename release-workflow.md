@@ -7,16 +7,7 @@
 
 ## Abstract
 
-This document is a proposal about how to manage releases of any software. It decribes the workflow that any developer should follow to produce great and ready to deploy releases. It starts by giving some context and motivation behind this proposal. Then, we will dive deep into the developer workflow; focusing on :
-
-* How to initialize/setup your project repo
-* How to well format our commit message
-* How to setup our project for continous integration
-* How to setup our project for continous delivery
-* How to name our branches
-* How to handle delivery regarding the branch we are on
-* How to manage release version with tagging
-* How to be ready for continous deployment
+This document is a proposal about how to manage our development workflow to produce quality softwares. It decribes the steps, part of our development workflow, that any developer should follow to produce great and ready to deploy software releases. It starts by giving some context and motivation behind; and then, dive deep into what this document aims for : the development workflow.
 
 ## Contents
 
@@ -26,3 +17,16 @@ This document is a proposal about how to manage releases of any software. It dec
 
 
 ## Background
+
+
+## Motivation 
+
+
+* How to initialize/setup your project repo
+* How to well format our commit message
+* How to setup our project for continous integration
+* How to setup our project for continous delivery
+* How to name our branches
+* How to handle delivery regarding the branch we are on
+* How to manage release version with tagging
+* How to be ready for continous deployment
