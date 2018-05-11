@@ -164,7 +164,9 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 │   ├── release                       #   - Execute tasks for pushing our packaged app to a repo manager
 ```
 
-
+```
+rake code:audit 
+```
 
 ### Utilities
 
