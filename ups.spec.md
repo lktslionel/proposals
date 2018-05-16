@@ -94,7 +94,7 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 │                                     #   for the project mainly inside the Rakefile
 ├── scripts/                          # Common bash scripts available inside the container
 ├── tests/                            # Specifications
-│   ├── accpetance                    #   For accpetance testing
+│   ├── acceptance                    #   For accpetance testing
 │   │   ├── features                  #     Contains feature definition in Gherkin langage
 │   │   │   ├── XXX.feature           #       - A feature file
 │   │   ├── steps                     #     Contains implemenation steps of features
@@ -103,6 +103,8 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 │   ├── CHANGELOG.md                  #   - Release notes for the project
 │   ├── GUIDELINES.md                 #   - Project guidelines inforamtion
 │   └── CONTRIBUTE.md                 #   - Information about how to contribute
+│   └── MOTIVATION.md                 # Describe the purpose behind building that project
+│   └── FAQ.md                        # Frequently Ask Questions about the project/product
 ├── ci/                               # Contains config file specific to your CI tool. Eg: jenkins
 ├── src/                              # For your source files
 ├── README.md                         # Main documentation (How-tos)
