@@ -4,34 +4,36 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>80</x>
-      <y>90</y>
+      <x>40</x>
+      <y>120</y>
       <w>210</w>
-      <h>260</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt; System &gt;&gt;
 Target System
-</panel_attributes>
+
+fg=gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>90</y>
-      <w>560</w>
-      <h>260</h>
+      <x>390</x>
+      <y>120</y>
+      <w>610</w>
+      <h>310</h>
     </coordinates>
     <panel_attributes>&lt;&lt; System &gt;&gt;
 Probing
-</panel_attributes>
+
+fg=gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>150</y>
+      <x>70</x>
+      <y>190</y>
       <w>150</w>
       <h>50</h>
     </coordinates>
@@ -42,20 +44,8 @@ A</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>230</y>
-      <w>150</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt; Service &gt;&gt;
-B</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>460</x>
-      <y>160</y>
+      <x>410</x>
+      <y>190</y>
       <w>160</w>
       <h>50</h>
     </coordinates>
@@ -66,8 +56,8 @@ Probe Executor</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>260</y>
+      <x>410</x>
+      <y>340</y>
       <w>160</w>
       <h>50</h>
     </coordinates>
@@ -79,8 +69,8 @@ Probe Scheduler
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
-      <y>160</y>
+      <x>800</x>
+      <y>190</y>
       <w>180</w>
       <h>50</h>
     </coordinates>
@@ -91,8 +81,8 @@ Metric Agreggator</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
-      <y>260</y>
+      <x>800</x>
+      <y>340</y>
       <w>180</w>
       <h>50</h>
     </coordinates>
@@ -103,26 +93,82 @@ Alarm</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>420</y>
-      <w>260</w>
-      <h>130</h>
+      <x>390</x>
+      <y>480</y>
+      <w>610</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>&lt;&lt; System &gt;&gt;
-Alerting
+Other services
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>470</y>
-      <w>180</w>
-      <h>50</h>
+      <x>210</x>
+      <y>200</y>
+      <w>220</w>
+      <h>60</h>
     </coordinates>
-    <panel_attributes>&lt;&lt; Service &gt;&gt;
-Alerter</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+Send requests
+to validate a 
+specific scenario</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>200</y>
+      <w>260</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+Push metrics regarding
+the result of the scenario
+execution</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>230</y>
+      <w>120</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+Launch Probe 
+execution</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>230</y>
+      <w>140</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+Watch metrics
+Check threshold
+exceeding</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>380</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+m2=Notify interested
+parties</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
