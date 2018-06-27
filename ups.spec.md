@@ -15,7 +15,7 @@ This document is an attempt to describe what I named UPS (Universal Project Stru
 Let's explain some useful terms used in this docs. Feel free to skip term definitions that you already know.
 
 * **UPS**: Universal Project Structure
-* **Kind**: A precise type of project specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
+* **Kind**: A precise type of project, specific to an area in software development. For example, in are of web development, we could have as project ***kind*** : an API, a site(blog), a web-app, etc.
 * **runtime**: The environment in which your code will be executed. Eg: nodejs, go, jre(java)
 * **lang**: The main language in which the code is written. 
 * **lang_extras**: The other programming language used in your project.
@@ -88,11 +88,18 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 .
 ├── .target/                          # Contains the resulting artifact of the `assemble` phase
 ├── .cache/                           # For caching purpose
+├── extras/                           # Miscellaneous, helpers, git-submodules and more
 ├── examples/                         # Use this for useful examples
 ├── etc/                              # Configuration files
 ├── tasks/                            # Binaries and utility scripts used for the project mainly inside the Rakefile
 │                                     #   for the project mainly inside the Rakefile
 ├── scripts/                          # Common bash scripts available inside the container
+│   ├── prepare                       #   - Install dependencies on the container: OS pkgs, etc
+│   ├── provision                     #   - Install useful pkgs 
+│   ├── configure                     #   - Execute tasks for running our app
+│   ├── run                           #   - Execute tasks for running our app
+│   ├── backup                        #   - Execute tasks for backuping our app
+│   └── restore                       #   - Execute tasks for restoring our app
 ├── tests/                            # Specifications
 │   ├── acceptance                    #   For accpetance testing
 │   │   ├── features                  #     Contains feature definition in Gherkin langage
