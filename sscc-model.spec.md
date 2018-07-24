@@ -119,6 +119,12 @@ A system diagram look like this :
 ## Examples
 
 
+## References
+
+* [No UML](https://medium.com/@volodymyrfrolov/nouml-afbb7f07f369)
+* [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
+
+
 
 
 ## Authors & contributors
