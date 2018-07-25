@@ -18,7 +18,7 @@ This document is an attempt to describe what I named UPS (Universal Project Stru
   1. [License]
 
 ## Proposal
-scripts scattered all over the system.
+
 Everything start with a task file. A task file is written in YAML and it contains a collections of task definitions. 
 A task definition describes only one command to be run. As I said before, the goal here, is to organize all your scripts into concrete tasks definitions; this to avoid having to worry about where all those scripts scattered all over the system are, when you need them.
 
@@ -26,12 +26,13 @@ A task definition describes only one command to be run. As I said before, the go
 
 A simple DSL is used to describe a task. Every task definition contains : 
 
-* **Name** :
-* **Short Description** :
-* **Long Description** :
-* **Command** :
-* **Args** :
-* **Hooks** :
+* **Name** : The task name in form of `<namespace>:<action>:<target|object>`
+* **Alias** : some shortcut to run the task. Make sur it's unique
+* **Short Description** : The summary of the goal of the task
+* **Long Description** : A more detailed description with some examples
+* **Command** : The full command to execute when the task is triggered
+* **Args** : Contrains on args passed to the command
+* **Hooks** : A way the execute scripts before or after a command execution
 
 ### Some examples
 
