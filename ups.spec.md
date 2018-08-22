@@ -9,6 +9,7 @@
 
 This document is an attempt to describe what I named UPS (Universal Project Structure). UPS is an project structure that is meant to be used for any kind of software project. Throughout this document I'll try to explain the philosphy and the goal behind this project structure, the main parts of this folder structure, how does it fit well for any kind of development and what benefits you could get from it.
 
+> Docker-powered development env
 
 ## Terminology
 
@@ -19,6 +20,7 @@ Let's explain some useful terms used in this docs. Feel free to skip term defini
 * **runtime**: The environment in which your code will be executed. Eg: nodejs, go, jre(java)
 * **lang**: The main language in which the code is written. 
 * **lang_extras**: The other programming language used in your project.
+* **platform**: Represent the provider on which your workload is running. Eg: AWS, AZURE, ...
 
 ## Contents
 
@@ -51,7 +53,7 @@ As a result, those frameworks and tools tend to shift our focus far from the bus
 
   > Why does the higher level directory structure of this application tell me the framework I am using; Why doesn't it tell me what the application does ? <br>- Robert C. Martins (Uncle Bob)
 
-For me, this means that we should not let those frameworks hide our buisness logic, but instead, make our application drives to way we use those frameworks. More precisely, the higher level directory structure of your application must either tell what your application does or nothing; the directory structure of your application must be frameworks neutral. But what does ***neutral*** means ? By neutral I mean that at first glance of an application structure you shouldn't be able to guess want framework the application is using. 
+For me, this means that we should not let those frameworks hide our buisness logic, but instead, make our application drives the way we use those frameworks. Moreover, the higher level directory structure of your application must either tell what your application does or nothing. The directory structure of your application must be frameworks neutral. But what does ***neutral*** means ? By neutral I mean that at first glance of an application structure you shouldn't be able to guess want framework the application is using. 
 
 I think doing this is a step forward towards the ultime goal of building a directory structure that make us get what the application do. Throughout this document, I will tell you how I acheive neutrality by building a **unique** high level directory structure.
 
