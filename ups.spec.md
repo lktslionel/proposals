@@ -142,6 +142,15 @@ Let's directly dive into it. Below is the global strucure of an UPS project.
 │       ├── docker-compose.yml        #   - Compose file use in the `assemble` phase
 ```
 
+#### Options
+
+```
+language:
+group:
+artifact:
+deps:
+```
+
 
 ### Continuous Integration
 
