@@ -2,7 +2,7 @@
 RFC: RFC0000
 Author: Steve Lee, Joey Aiello
 Owner: Steve Lee, Joey Aiello, Steve Lee, Joey Aiello
-Status: Draft
+Status: `Draft`
 Supersedes: #123, #232, #434
 Area: Process
 Version: 1.4
