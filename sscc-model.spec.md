@@ -52,7 +52,8 @@ Item | Params | Details | Representation
 System | Name or Context | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-system-drawing-v1.png) 
 Service | Name | {metadata} are as kv pairs<br> givingmore detail on the system | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-service-drawing](./assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-service-drawing.png)
 Component | Name | {metadata}  | ![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-component-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-component-drawing.png)
-Class | Name | |![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing.png)
+Resource | Name | | 
+Class (@deprecated) | Name | |![DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing](assets/imgs/DOC-ASS.PRS.PRP.sscc-v0.1.0-draft-class-drawing.png)
 
 <br>
 
@@ -76,7 +77,9 @@ In SSCC model we have 4 main concepts with their associated diagrams :
 - **S**: System Diagram
 - **S**: Service Diagram
 - **C**: Component Diagram
-- **C**: Class Diagram
+- **R**: Resource Diagram / 
+- **C**: Class Diagram (@deprecated)
+
 
 With those 4 abstract concepts we could architure almost any system. We could also view a system architecture from different angles.
 In fact, each diagram gives a specific level of details regarding your architecture. Suppose you are presenting your architecture to specific skateholder type; you need to show them the level of details that is appropriate to them. 
